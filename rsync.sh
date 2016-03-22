@@ -4,4 +4,4 @@
 
 user="";
 
-rsync -aPv --modify-window=7200 --exclude '.local/share/Steam/*' --exclude 'Desktop' --exclude 'Downloads' --progress --delete /home/*/ '/media/${user}/Mars/Backups/rsync'
+rsync -aPv --modify-window=7200 --exclude '.local/share/Steam/*' --exclude 'Desktop' --exclude '.cache' --exclude ".PlayOnLinux" --exclude 'Downloads' --exclude 'lost+found' --delete --progress --delete /home/*/ '/media/${user}/Mars/Backups/rsync'
